@@ -1,0 +1,216 @@
+/* Nav */
+.dropdown {
+    text-align: center;
+    font-family: "Signika Negative", sans-serif; }
+  
+  .navbar-brand {
+    font-family: "Signika Negative", sans-serif; }
+  
+  .navbar-nav {
+    font-family: "Signika Negative", sans-serif; }
+  
+  .btn-group {
+    font-family: "Signika Negative", sans-serif; }
+  
+  /* Slider */
+  .carousel-inner, .carousel-item {
+    height: 100vh; }
+  
+  .carousel-item img {
+    height: 100%;
+    object-fit: cover; }
+  
+  .carousel-caption {
+    font-family: "Signika Negative" , sans-serif;
+    left: 50%;
+    top: 85%;
+    transform: translate(-50%, -50%);
+    right: auto;
+    bottom: auto;
+    padding: 0 0;
+    color:white;
+    text-shadow: 2px 4px 10px black;
+   }
+  
+  .btn-dark {
+    font-family: "Signika Negative",
+      sans-serif; }
+  
+  /* Container */
+  .col, [class^=col-] {
+    background-color:#fff;
+    background-color: transparent; }
+
+  /* Products */
+  .card-img-top img {
+    width: 100%;
+    object-fit: cover; }
+  
+  .products {
+    font-family: "Signika Negative", sans-serif; }
+  
+  .products .card-body {
+    font-family: "Signika Negative", sans-serif; }
+  
+  .products .btn-light {
+    color:#3366CC;
+    font-family: "Signika Negative", sans-serif; }
+  /*Between*/
+  .intro {
+    background: #fff; }
+  
+  .intro p {
+    width: 70%;
+    margin: 0 auto;
+    padding: 48px 0;
+    text-align:center;
+    font-size: 20px;
+    border-top: 1px solid #3d3d3d;
+    border-bottom: 1px solid #3d3d3d; }
+  
+  /* Gallery */
+  .card-body-1 h2 {
+    color: #fff;
+    font-family: "Signika Negative", sans-serif; }
+  
+  .card-body-1 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  
+  .card-img-1 img {
+    width: 100%; }
+  
+  .card-img-2 img {
+    width: 100%; }
+  
+  .gallery .btn-light {
+    font-family: "Signika Negative", sans-serif; }
+  
+  /* Info */
+  .info {
+    font-family: "Signika Negative", sans-serif; }
+  
+  .row .col-md-4 {
+    background:#eff2f5;
+    color:black;
+    margin: 0 0 10px 0; }
+  
+  /* Contact */
+  /*.contact {
+    background-color:#eff2f5;
+    font-family: "Signika Negative", sans-serif; }
+  
+  .contact .row {
+    margin: 0 0 0 130px; }
+  
+  .col-md {
+    background-color: #eff2f5; }
+  
+  .contact .card {
+    background-color: #eff2f5; }
+  
+  .card ul {
+    list-style-type: none; }
+  
+  .contact .col-sm-6 {
+    background-color: #eff2f5; }
+  
+  .col-md ul {
+    list-style-type: none; }
+  
+  .contact ul {
+    padding: 0; }
+  .box {
+    width: 210px; }
+  
+  /* Skills */
+  [class^="skill-"] {
+    position: relative;}
+  
+  .skill-image {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1; }
+  
+  .skill-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+  
+  .skill-right .skill-image {
+    right: 0; }
+  
+  .skill-right .skill-description {
+    padding: 36px 55% 36px 0;
+    text-align: right;
+    text-align: justify;
+  }
+  
+  .skill-left .skill-description {
+    padding: 36px 0 36px 55%;
+    text-align: left;
+    text-align: justify;
+  }
+  
+  .skill-image img:hover {
+    transform: scale(1.2); }
+  
+  .skill-image img {
+    transition: all 1s; }
+  
+  .splash-inner {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  /* Form*/
+  form{
+    background: #26313B;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-around;
+    min-width: 450px;
+    max-width: 1000px;
+    padding: 30px;
+    text-align: center;
+    color:white;
+    height: 600px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+    margin-left: auto;
+    margin-right: auto;
+    margin: 30px auto 0;
+  }
+  /* Footer */
+  .footer {
+    background-color: #d1d8e0;
+    font-family: "Signika Negative", sans-serif; }
+  
+  .d-flex {
+    justify-content: space-around; }
+  
+  .page-footer ul {
+    list-style-type: none;}
+  
+  .footer .page-footer .col-md-4 {
+    background-color: #d1d8e0; }
+  
+  .footer .page-footer .col-md-6 {
+    background-color: #d1d8e0;}
+    
+  /* Media */
+  @media (max-width: 767px) {
+    .contact .row {
+      text-align: left;
+      margin: 0; }
+      .contact .row .col-sm-12 {
+        padding: 5px 0 20px 20px; }
+  
+    .d-flex {
+      flex-direction: column; } }
+  
+  

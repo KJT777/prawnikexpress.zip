@@ -1,0 +1,26 @@
+.popup-wrapper {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  display: none;
+  left: 0;
+  top: 0;
+  z-index: 2000;
+  background: rgba(0, 0, 0, 0.7); }
+  .popup-wrapper.active {
+    display: block; }
+  .popup-wrapper .close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 3000;
+    cursor: pointer; }
+  .popup-wrapper .modal-content {
+    display: none; }
+    .popup-wrapper .modal-content.active {
+      display: block; }
+
+.contact {
+  padding-top: 60px; }
+
+/*# sourceMappingURL=odev-style.css.map */
