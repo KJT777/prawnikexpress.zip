@@ -33,4 +33,18 @@
 
   showModalHandler();
 
+  class Cart {
+
+    constructor() {
+      this.cart = [];
+      this.initAddCartButtons();
+    }
+
+    initAddCartButtons() {
+
+    }
+  }
+
+  new Cart();
+
 }
