@@ -181,6 +181,7 @@
     margin-left: auto;
     margin-right: auto;
     margin: 30px auto 0; 
+  }
   /* Footer */
   .footer {
     background-color: #d1d8e0;
@@ -209,3 +210,22 @@
     .d-flex {
       flex-direction: column; } }
   
+
+.modal-body {
+  overflow-y: auto;
+    max-height: 80vh;
+}
+
+#cart {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 5000;
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+  &.active {
+    display: block;
+  }
+}

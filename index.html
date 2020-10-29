@@ -38,7 +38,7 @@
       </ul>
     </div>
     <div class="btn-group" role="group" aria-label="basic example">
-      <button type="button" class="btn btn-dark">Koszyk<i class="fas fa-shopping-cart ml-2"></i></button>
+      <button id="show-cart" type="button" class="btn btn-dark">Koszyk<i class="fas fa-shopping-cart ml-2"></i></button>
     </div>
   </nav>
   <div id="main-slider" class="carousel slide" data-ride="carousel">
@@ -112,7 +112,11 @@
                     </ul> 
                   <h5>Porada prawna
                     <br>39,99 pln</h5>                                            <h5>DODAJ DO KOSZYKA</h5>
-                  <a href="#" class="btn btn-dark add-to-cart">Dodaj</a>
+                  <a href="#"
+                    class="btn btn-dark add-to-cart"
+                    data-type="porada-prawna"
+                    data-range="prawo-konsumenckie"
+                  >Dodaj</a>
                 </div>
               </div>
               <div class="col-sm-4">
@@ -136,7 +140,11 @@
                   <h5>Wystąpienie
                     <br>49,99 pln</h5>
                   <h5>DODAJ DO KOSZYKA</h5>
-                  <a href="#" class="btn btn-dark add-to-cart">Dodaj</a>
+                  <a href="#"
+                    class="btn btn-dark add-to-cart"
+                    data-type="wystapienie"
+                    data-range="prawo-konsumenckie"
+                  >Dodaj</a>
                 </div>
               </div>
               <div class="col-sm-4">
@@ -159,7 +167,11 @@
                     </ul> 
                   <h5>Pozew
                     <br>129,99 pln</h5>                                                  <h5>DODAJ DO KOSZYKA</h5>
-                  <a href="#" class="btn btn-dark add-to-cart">Dodaj</a>
+                  <a href="#"
+                    class="btn btn-dark add-to-cart"
+                    data-type="pozew"
+                    data-range="prawo-konsumenckie"
+                    >Dodaj</a>
                 </div>
               </div>
               <div class="col-sm-4 d-lg-none d-xl-block"></div>
@@ -210,7 +222,11 @@
                     </ul>    
                   <h5>Porada prawna
                     <br>49,99 pln</h5>                                            <h5>DODAJ DO KOSZYKA</h5>
-                  <a href="#" class="btn btn-dark add-to-cart">Dodaj</a>
+                  <a href="#"
+                    class="btn btn-dark add-to-cart"
+                    data-type="porada-prawna"
+                    data-range="prawo-pracy"
+                  >Dodaj</a>
                 </div>
               </div>
               <div class="col-sm-4">
@@ -234,7 +250,11 @@
                   <h5>Wystąpienie
                     <br>69,99 pln</h5>
                   <h5>DODAJ DO KOSZYKA</h5>
-                  <a href="#" class="btn btn-dark add-to-cart">Dodaj</a>
+                  <a href="#"
+                    class="btn btn-dark add-to-cart"
+                    data-type="wystapienie"
+                    data-range="prawo-pracy"
+                  >Dodaj</a>
                 </div>
               </div>
               <div class="col-sm-4">
@@ -257,7 +277,11 @@
                     </ul>     
                   <h5>Pozew
                     <br>159,99 pln</h5>                                                  <h5>DODAJ DO KOSZYKA</h5>
-                  <a href="#" class="btn btn-dark add-to-cart">Dodaj</a>
+                  <a href="#"
+                    class="btn btn-dark add-to-cart"
+                    data-type="pozew"
+                    data-range="prawo-pracy"
+                  >Dodaj</a>
                 </div>
               </div>
               <div class="col-sm-4 d-lg-none d-xl-block"></div>
@@ -309,7 +333,11 @@
                   <h5>Porada prawna Express
                     <br>69,99 pln</h5>
                   <h5>DODAJ DO KOSZYKA</h5>
-                  <a href="#" class="btn btn-dark add-to-cart">Dodaj</a>
+                  <a href="#"
+                    class="btn btn-dark add-to-cart"
+                    data-type="porada-prawna"
+                    data-range="prawo-konsumenckie-express"
+                  >Dodaj</a>
                 </div>
               </div>
               <div class="col-sm-4">
@@ -333,7 +361,11 @@
                   <h5>Wystąpienie Express
                     <br>79,99 pln</h5>
                     <h5>DODAJ DO KOSZYKA</h5>
-                  <a href="#" class="btn btn-dark add-to-cart">Dodaj</a>
+                  <a href="#"
+                    data-type="wystapienie"
+                    data-range="prawo-konsumenckie-express"
+                    class="btn btn-dark add-to-cart"
+                  >Dodaj</a>
                 </div>
               </div>
               <div class="col-sm-4">
@@ -357,7 +389,11 @@
                   <h5>Pozew Express
                     <br>169,99 pln</h5>
                   <h5>DODAJ DO KOSZYKA</h5>
-                  <a href="#" class="btn btn-dark add-to-cart">Dodaj</a>
+                  <a href="#"
+                    class="btn btn-dark add-to-cart"
+                    data-type="pozew"
+                    data-range="prawo-konsumenckie-express"
+                  >Dodaj</a>
                 </div>
               </div>
               <div class="col-sm-4 d-lg-none d-xl-block"></div>
@@ -408,7 +444,11 @@
                   <h5>Porada prawna Express
                     <br>89,99 pln</h5>
                   <h5>DODAJ DO KOSZYKA</h5>
-                  <a href="#" class="btn btn-dark add-to-cart">Dodaj</a>
+                  <a href="#"
+                    class="btn btn-dark add-to-cart"
+                    data-type="porada-prawna"
+                    data-range="prawo-pracy-express"
+                  >Dodaj</a>
                 </div>
               </div>
               <div class="col-sm-4">
@@ -432,7 +472,11 @@
                   <h5>Wystąpienie Express
                     <br>109,99 pln</h5>
                     <h5>DODAJ DO KOSZYKA</h5>
-                  <a href="#" class="btn btn-dark add-to-cart">Dodaj</a>
+                  <a href="#"
+                    class="btn btn-dark add-to-cart"
+                    data-type="wystapienie"
+                    data-range="prawo-pracy-express"
+                  >Dodaj</a>
                 </div>
               </div>
               <div class="col-sm-4">
@@ -456,7 +500,11 @@
                   <h5>Pozew Express
                     <br>199,99 pln</h5>
                   <h5>DODAJ DO KOSZYKA</h5>
-                  <a href="#" class="btn btn-dark add-to-cart">Dodaj</a>
+                  <a href="#"
+                    class="btn btn-dark add-to-cart"
+                    data-type="pozew"
+                    data-range="prawo-pracy-express"
+                  >Dodaj</a>
                 </div>
               </div>
               <div class="col-sm-4 d-lg-none d-xl-block"></div>
@@ -834,9 +882,44 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
         </div>
       </div>
     </div>
+
+    <div class="alert alert-success" role="alert">
+      Dodano pozycję do koszyka!
+    </div>
+    
+    <div id="cart">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Koszyk</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <table class="table">
+              <thead class="thead-dark">
+                <tr>
+                  <th scope="col">Wybrane pozycje</th>
+                  <th scope="col">Cena</th>
+                  <th scope="col">Usuń</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+              </tbody>
+            </table>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary">Wypełnij szczegóły spraw</button>
+          </div>
+        </div>
+      </div>
+    </div>
     
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="odev/Cart.js"></script>
     <script src="odev/odev.js" ></script>
 </body>
 
