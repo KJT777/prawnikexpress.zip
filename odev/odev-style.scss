@@ -30,3 +30,14 @@
 .contact {
     padding-top: 60px;
 }
+
+.alert {
+    display: none;
+    position: fixed;
+    bottom: 40px;
+    width: 100%;
+    z-index: 1000;
+    &.active {
+        display: block;
+    }
+}
