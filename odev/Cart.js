@@ -22,11 +22,12 @@ class Cart {
   handleAddToCart(event, thisCart) {
     event.preventDefault();
     const clickedElement = event.target;
+    console.log(clickedElement);
 
     thisCart.orders.push({
       title: clickedElement.parentNode.querySelector('h5').innerText,
       id: Math.random().toString(36).substr(2, 9),
-      cash: 20
+      price: parseInt(clickedElement.dataset.price)
     });
     thisCart.showAlert();
     thisCart.drawOrderList();
@@ -41,11 +42,12 @@ class Cart {
   }
 
   drawOrderList() {
+    console.log(this)
     const thisCart = this;
-    const baseTable = function(id, name, cash) {
+    const baseTable = function(id, name, price) {
       return `<tr>
       <th scope="row">`+ name +`</th>
-      <td>`+cash+`</td>
+      <td>`+price+`</td>
       <td>
         <button type="button" class="btn btn-dark" data-id="`+id+`">X</button>
       </td>
@@ -55,7 +57,7 @@ class Cart {
     const orderListElement = document.querySelector('#cart tbody');
     orderListElement.innerHTML = "";
     thisCart.orders.forEach(function(el){
-      const row = baseTable(el.id, el.title, el.cash+`zł`);
+      const row = baseTable(el.id, el.title, el.price+`zł`);
       orderListElement.insertAdjacentHTML('beforeend', row);
     });
 
