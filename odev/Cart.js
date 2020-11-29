@@ -1,84 +1,105 @@
 class Cart {
   constructor() {
-    this.orders = [];
-    this.initAllButtons();
+    window.orders = [];
+    window.lawsuit = [];
+    window.clientData = {};
+
+    this.initialCartButton();
   }
 
-  initAllButtons() {
-    
-
-    // Add to cart
-    const addToCartButtons = document.querySelectorAll(".add-to-cart");
-    for (let button of addToCartButtons) {
-      button.addEventListener("click", event => this.handleAddToCart(event, this));
-    }
-
-    // Show Cart
-    document.querySelector('#show-cart').addEventListener('click', this.toggleCart);
-    // Hide Cart
-    document.querySelector('#cart .close').addEventListener('click', this.toggleCart);
-  }
-
-  handleAddToCart(event, thisCart) {
-    event.preventDefault();
-    const clickedElement = event.target;
-    console.log(clickedElement);
-
-    thisCart.orders.push({
-      title: clickedElement.parentNode.querySelector('h5').innerText,
-      id: Math.random().toString(36).substr(2, 9),
-      price: parseInt(clickedElement.dataset.price)
-    });
-    thisCart.showAlert();
-    thisCart.drawOrderList();
-  }
-
-  showAlert() {
-    const alertElement = document.querySelector(".alert");
-    alertElement.classList.add("active");
-    setTimeout(function() {
-      document.querySelector(".alert").classList.remove("active");
-    }, 5000);
+  initialCartButton() {
+    document.querySelector('button#show-cart')
+      .addEventListener('click', () => this.showCart());
   }
 
   drawOrderList() {
-    console.log(this)
-    const thisCart = this;
-    const baseTable = function(id, name, price) {
-      return `<tr>
-      <th scope="row">`+ name +`</th>
-      <td>`+price+`</td>
-      <td>
-        <button type="button" class="btn btn-dark" data-id="`+id+`">X</button>
-      </td>
-      </tr>`;
-    }
 
-    const orderListElement = document.querySelector('#cart tbody');
+    const tableWrapper = document.createElement('div');
+    
+    tableWrapper.innerHTML = `
+      <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Wybrane pozycje</th>
+            <th scope="col">Cena</th>
+            <th scope="col">Usuń</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+        </tbody>
+      </table>
+    `;
+    
+    const baseTable = function (id, name, price) {
+      return (
+        `<tr>
+          <th scope="row">` + name + `</th>
+          <td>` + price + `</td>
+          <td><button type="button" class="btn btn-dark" data-id="` + id + `">X</button></td>
+        </tr>`
+      );
+    };
+
+    
+    const orderListElement = tableWrapper.querySelector('tbody');
     orderListElement.innerHTML = "";
-    thisCart.orders.forEach(function(el){
-      const row = baseTable(el.id, el.title, el.price+`zł`);
-      orderListElement.insertAdjacentHTML('beforeend', row);
+    window.orders.forEach(function (el) {
+      const row = baseTable(el.id, el.title, el.price + `zł`);
+      orderListElement.insertAdjacentHTML("beforeend", row);
     });
 
-    const buttons = orderListElement.querySelectorAll('button');
-    for(let button of buttons) {
+    const buttons = orderListElement.querySelectorAll("button");
+    for (let button of buttons) {
       const buttonId = button.dataset.id;
-      button.addEventListener('click', function() {
-        thisCart.removeOrder(thisCart, buttonId);
+      button.addEventListener("click", () => {
+        this.removeOrder(buttonId);
       });
     }
 
+    return tableWrapper;
   }
 
-  removeOrder(thisCart, id) {
-    thisCart.orders = thisCart.orders.filter(el => el.id != id);
-    console.log('test')
-    thisCart.drawOrderList();
+  removeOrder(id) {
+    window.orders = window.orders.filter((el) => el.id != id);
+    this.showCart();
   }
 
-  toggleCart() {
-    document.querySelector('#cart').classList.toggle('active');
+  closeCart() {
+    document.querySelector("#generic-form").classList.remove("active");
   }
 
+  showCart() {
+    genericForm.showForm();
+    if(window.orders.length) {
+      genericForm.updateWithContent(
+        'Koszyk',
+        this.drawOrderList()
+        ,
+        'Wypełnij szczegóły spraw',
+        () => {
+          this.startUserForm();
+        }
+      );
+    } else {
+      genericForm.updateWithContent(
+        'Koszyk',
+        '(Twój koszyk jest pusty)'
+        ,
+        'Zamknij koszyk',
+        () => {
+          this.closeCart();
+        }
+      );
+    }
+    
+  }
+
+  startUserForm() {
+    new UserForm(this.startLawsuitForm);
+  }
+
+  startLawsuitForm() {
+    new LawsuitForm();
+  }
 }

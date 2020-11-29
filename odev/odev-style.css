@@ -32,4 +32,7 @@
   .alert.active {
     display: block; }
 
+input[type="file"] {
+  display: none; }
+
 /*# sourceMappingURL=odev-style.css.map */

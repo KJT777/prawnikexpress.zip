@@ -93,6 +93,34 @@
   color: black;
   margin: 0 0 10px 0; }
 
+/* Contact */
+/*.contact {
+  background-color:#eff2f5;
+  font-family: "Signika Negative", sans-serif; }
+
+.contact .row {
+  margin: 0 0 0 130px; }
+
+.col-md {
+  background-color: #eff2f5; }
+
+.contact .card {
+  background-color: #eff2f5; }
+
+.card ul {
+  list-style-type: none; }
+
+.contact .col-sm-6 {
+  background-color: #eff2f5; }
+
+.col-md ul {
+  list-style-type: none; }
+
+.contact ul {
+  padding: 0; }
+.box {
+  width: 210px; }
+
 /* Skills */
 [class^="skill-"] {
   position: relative; }
@@ -135,60 +163,8 @@
   left: 50%;
   transform: translate(-50%, -50%); }
 
-/* opinions */
-
-/*#nav a, #nav_opinions a {
-	display: inline-block;
-	border: 1px solid #df5900;
-	background: #fff;
-	border-radius: 20px;
-	width: 12px;
-	height: 12px;
-	margin: 0 5px;
-	text-indent: 9999px;
-	overflow: hidden;
-}
-H6.opinions {
-	font-size: 2em;
-	font-weight: normal;
-	margin: 20px 0 20px 0;
-	color: #000000;
-}
-#nav_opinions {
-	position: absolute;
-	width: 978px;
-	margin-top: 150px;
-	text-align: center;
-}
-element {
-	position: relative;
-	width: 950px;
-	height: 132px;
-}
-element {
-	background-color:#ffffff;
-	position: absolute;
-	top: 0px;
-	left: 0px;
-	display: none;
-	z-index: 8;
-	opacity: 0;
-	width: 908px;
-	height: 90px;
-}
-#opinions p {
-	width: 908px;
-	font-style: italic;
-	font-size: 1.5em;
-	height: 90px;
-	background-color: #ffffff;
-	border: 1px solid #cccccc;
-	border-radius: 15px;
-	padding: 20px;
-}
-
 /* Form*/
-form {
+.contact form {
   background: #26313B;
   display: flex;
   flex-flow: column nowrap;
@@ -247,6 +223,18 @@ form {
   background: rgba(0, 0, 0, 0.8);
   display: none; }
   #cart.active {
+    display: block; }
+
+#generic-form {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 5000;
+  background: rgba(0, 0, 0, 0.8);
+  display: none; }
+  #generic-form.active {
     display: block; }
 
 /*# sourceMappingURL=style.css.map */

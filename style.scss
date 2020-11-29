@@ -165,7 +165,7 @@
     left: 50%;
     transform: translate(-50%, -50%); }
   /* Form*/
-  form{
+  .contact form{
     background: #26313B;
     display: flex;
     flex-flow: column nowrap;
@@ -217,6 +217,20 @@
 }
 
 #cart {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 5000;
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+  &.active {
+    display: block;
+  }
+}
+
+#generic-form {
   position: fixed;
   top: 0;
   left: 0;
