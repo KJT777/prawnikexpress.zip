@@ -8,6 +8,7 @@ class LawsuitForm {
       <form>
         <div class="form-group">
           <textarea class="form-control" id="lawsuitTextarea" rows="10"></textarea>
+          <p>Szanowni Państwo w celu usprawnienia naszej pracy prosimy o dołączenie dokumentów związanych ze sprawą oraz bardzo dokładne jej opisanie  (najlepiej chronologicznie – data-zdarzenie)</p>
         </div>
       </form>
       <form enctype="multipart/form-data" action="odev/upload.php" method="post" id="file-form">
@@ -54,7 +55,16 @@ class LawsuitForm {
 
           genericForm.updateWithContent(
             'Wszystko poszło sprawnie!',
-            'Dziękujemy za złożenie zamówień. Po opłaceniu piniendzy zajmiemy się Twoją sprawą.</p>',
+            `<p>Szanowni Państwo po uregulowaniu wynagrodzenia, przystępujmy niezwłocznie do realizacji usługi w wybranym terminie i formie.<br> 
+            Na wpłatę czekamy 7 dni roboczych. Jednak  jeśli zależy Państwu na czasie proponujemy jak najszybciej uregulować płatność (w TYTULE wpisując imię i nazwisko oraz wybraną pozycję). Następnie wysłać potwierdzenie na adres mailowy.<br><br> 
+            <b>Dane do wpłaty:</b><br>
+            Suma do wpłaty: ${window.cost} zł<br><br>
+            Kate& KJT Business<br>
+            Katarzyna Trzebiatowska<br> 
+            71-298 Szczecin <br>
+            MBank , numer konta: 43 1140 2004 0000 3602 7686 3970<br><br>
+            
+            *za opłaconą usługę  uznajemy kwotę która zostanie zaksięgowana na naszym koncie.</p>`,
             'Zamknij popup',
             () => {
                 genericForm.closeForm();
@@ -68,10 +78,19 @@ class LawsuitForm {
 
   sendMail() {
 
-    let content = '';
+    console.log(window.clientData)
+
+    let content = `
+      <h4>Dane</h4>
+      <b>Imie:</b> ${window.clientData.name}<br>
+      <b>Nazwisko: </b> ${window.clientData.lastName}<br>
+      <b>Mail: </b> ${window.clientData.mail}<br>
+      <b>Adres: </b> ${window.clientData.fullAddress}<br>
+      <b>Telefon: </b> ${window.clientData.phone}
+    `;
 
     const topic = (el) => `<div>
-      <h1>${el.title}</h1>
+      <h4>${el.title}</h4>
       <p>${el.text}</p>
       <span>Id pliku: ${el.fileId}</span>
     </div>`;

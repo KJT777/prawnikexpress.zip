@@ -15,7 +15,7 @@ class Cart {
   drawOrderList() {
 
     const tableWrapper = document.createElement('div');
-    
+
     tableWrapper.innerHTML = `
       <table class="table">
         <thead class="thead-dark">
@@ -41,10 +41,12 @@ class Cart {
       );
     };
 
+    window.cost = 0;
     
     const orderListElement = tableWrapper.querySelector('tbody');
     orderListElement.innerHTML = "";
     window.orders.forEach(function (el) {
+      window.cost += Number(el.price);
       const row = baseTable(el.id, el.title, el.price + `zł`);
       orderListElement.insertAdjacentHTML("beforeend", row);
     });
@@ -56,6 +58,11 @@ class Cart {
         this.removeOrder(buttonId);
       });
     }
+
+    const sumElement = document.createElement('div');
+    sumElement.innerHTML = `<b>Łącznie do zapłaty:</b> ${window.cost} zł`;
+
+    tableWrapper.appendChild(sumElement);
 
     return tableWrapper;
   }

@@ -32,7 +32,7 @@ switch ($plik_blad) {
 }
 
 /* sprawdzenie rozszerzenia pliku - dzięki temu mamy pewność, że ktoś nie zapisze na serwerze pliku .php */
-$dozwolone_rozszerzenia=array("jpeg", "jpg", "tiff", "tif", "png", "gif");
+$dozwolone_rozszerzenia=array("jpeg", "jpg", "tiff", "tif", "png", "gif", "doc", "docx", "zip", "rar");
 $plik_rozszerzenie=pathinfo(strtolower($plik_nazwa), PATHINFO_EXTENSION);
 if (!in_array($plik_rozszerzenie, $dozwolone_rozszerzenia, true)) {
 	exit("Niedozwolone rozszerzenie pliku.");
