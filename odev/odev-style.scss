@@ -45,3 +45,26 @@
 input[type="file"] {
     display: none;
 }
+
+.carousel-inner,
+.carousel-item {
+    height: 150px;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.carousel-indicators {
+    li {
+        background-color: #26313B;
+    }
+    .active {
+        background: #007bff;
+    }
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    background-color: #007bff;
+    width: 30px;
+}
