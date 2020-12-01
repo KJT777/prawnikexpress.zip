@@ -52,4 +52,13 @@ input[type="file"] {
   background-color: #007bff;
   width: 30px; }
 
+@media (max-width: 900px) {
+  .carousel-inner,
+  .carousel-item {
+    height: 250px; } }
+@media (max-width: 500px) {
+  .carousel-inner,
+  .carousel-item {
+    height: 300px; } }
+
 /*# sourceMappingURL=odev-style.css.map */
