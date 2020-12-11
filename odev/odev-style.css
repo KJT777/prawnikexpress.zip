@@ -35,8 +35,8 @@
 input[type="file"] {
   display: none; }
 
-.carousel-inner,
-.carousel-item {
+#opinie-klientow-kotwica .carousel-inner,
+#opinie-klientow-kotwica .carousel-item {
   height: 150px;
   padding: 20px;
   box-sizing: border-box;

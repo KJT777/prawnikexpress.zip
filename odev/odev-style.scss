@@ -46,12 +46,14 @@ input[type="file"] {
     display: none;
 }
 
-.carousel-inner,
-.carousel-item {
-    height: 150px;
-    padding: 20px;
-    box-sizing: border-box;
-    text-align: center;
+#opinie-klientow-kotwica {
+    .carousel-inner,
+    .carousel-item {
+        height: 150px;
+        padding: 20px;
+        box-sizing: border-box;
+        text-align: center;
+    }
 }
 
 .carousel-indicators {
