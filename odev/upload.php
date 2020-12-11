@@ -1,6 +1,10 @@
 <?php
 /* utworzenie zmiennych */
-$folder_upload=$_SERVER['DOCUMENT_ROOT']."/odev/upload";
+/* lokalnie */
+$folder_upload=$_SERVER['DOCUMENT_ROOT']."/prawnikexpress/odev/upload";
+
+/* zdalnie */
+// $folder_upload=$_SERVER['DOCUMENT_ROOT']."/odev/upload";
 $plik_nazwa=$_FILES['plik']['name'];
 $plik_lokalizacja=$_FILES['plik']['tmp_name']; //tymczasowa lokalizacja pliku
 $plik_mime=$_FILES['plik']['type']; //typ MIME pliku wysłany przez przeglądarkę

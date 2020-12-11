@@ -68,8 +68,9 @@
 }
 
 
-function wyslijPlik(fileId) {
+function wyslijPlik(fileId, callback, content) {
   var plik=document.getElementById("plik").files[0];
+  console.log(fileId, plik);
 	
 	var formularz=new FormData(); //tworzymy nowy formularz do wysłania
   formularz.append('id', fileId);
@@ -77,7 +78,9 @@ function wyslijPlik(fileId) {
   /* wysyłamy formularz za pomocą AJAX */
 	var xhr=new XMLHttpRequest();
 	xhr.upload.addEventListener("progress", postepWysylania, false);
-	xhr.addEventListener("load", zakonczenieWysylania, false);
+	xhr.addEventListener("load", function(event) {
+    zakonczenieWysylania(event, callback, content)
+  }, false);
 	xhr.addEventListener("error", bladWysylania, false);
 	xhr.addEventListener("abort", przerwanieWysylania, false);
 	xhr.open("POST", "./odev/upload.php", true);
@@ -90,8 +93,9 @@ function postepWysylania(event) {
 	document.getElementById("postep").value=procent;
 }
 
-function zakonczenieWysylania(event) {
-	document.getElementById("status").innerHTML=event.target.responseText;
+function zakonczenieWysylania(event, callback, content) {
+  document.getElementById("status").innerHTML=event.target.responseText;
+  callback && callback(content);
 }
 
 function bladWysylania(event) {

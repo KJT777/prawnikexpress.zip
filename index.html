@@ -814,21 +814,22 @@
 <section class="contact" id="page-footer">
         <div class="container">
             <h7 class="section-title"></h7> 
-    <form>
+    <form enctype="multipart/form-data" action="odev/upload.php" method="post" id="file-form">
         <title>Forms!</title>
         <h1>Skontaktuj sie z Nami</h1>
 	   <div>
-		    <input type="text" placeholder="Imię"/>
-		    <input type="text" placeholder="Nazwisko"/></div>
-	        <input type="email" placeholder="Twój e-mail *" required />
-	        <input type="message"placeholder="Numer telefonu*" required/>
+		    <input type="text" placeholder="Imię" id="form-name" required/>
+		    <input type="text" placeholder="Nazwisko" id="form-lastname" required/></div>
+	        <input type="email" placeholder="Twój e-mail *" id="form-mail" required />
+	        <input type="message"placeholder="Numer telefonu*" id="form-phone" required/>
   <div class="form-group">
     <label for="exampleFormControlTextarea1">OPISZ DOKŁADNIE SYTUACJĘ - NA ZASADZIE CHRONOLOGII - DATA I ZDARZENIE</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    <textarea class="form-control" id="form-description" rows="3" id="form-description" required></textarea>
   </div>        
       <div class="form-group">
-    <label for="exampleFormControlFile1">Dołącz potrzebne dokumenty</label>
-    <input type="file" class="form-control-file" id="exampleFormControlFile1">
+        <label class="custom-file-upload">
+          <input type="file" name="plik" id="plik" class="btn btn-primary">
+        </label>
   </div>
       <div class="form-group">
     <div class="form-check">
@@ -841,6 +842,8 @@ Akceptuję <a href="#" class="alert-link">Regulamin świadczenia usług</a> i za
       </div>
     </div>
   </div>
+      <div id="status"></div>
+      <progress value="0" max="100" id="postep"></progress>
       <input type="submit" value="WYŚLIJ!"/>
 	</form>
 	</div>
@@ -994,6 +997,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
     <script src="odev/LawsuitForm.js"></script>
     <script src="odev/UserForm.js"></script>
     <script src="odev/Cart.js"></script>
+    <script src="odev/Form.js"></script>
     <script src="odev/odev.js" ></script>
 </body>
 

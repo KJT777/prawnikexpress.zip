@@ -63,22 +63,32 @@ input[type="file"] {
     }
 }
 
-.carousel-control-next,
-.carousel-control-prev {
-    background-color: #007bff;
-    width: 30px;
+#opinie-klientow-kotwica {
+    .carousel-control-next,
+    .carousel-control-prev {
+        background-color: #007bff;
+        width: 30px;
+    }
 }
 
 @media(max-width: 900px) {
-    .carousel-inner,
-    .carousel-item {
-        height: 250px;
+    #opinie-klientow-kotwica {
+        .carousel-inner,
+        .carousel-item {
+            height: 250px;
+        }
     }
 }
 
 @media(max-width: 500px) {
-    .carousel-inner,
-    .carousel-item {
-        height: 300px;
+    #opinie-klientow-kotwica {
+        .carousel-inner,
+        .carousel-item {
+            height: 300px;
+        }
     }
+}
+
+#page-footer input[type="file"] {
+    display: block;
 }

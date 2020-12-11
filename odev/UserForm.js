@@ -65,6 +65,7 @@ class UserForm {
     content.appendChild(checkboxWrapper);
     checkboxWrapper.addEventListener('click', () => {
       this.accept = !this.accept;
+      this.fillClientData();
       this.update();
     })
 
