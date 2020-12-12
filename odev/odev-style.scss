@@ -6,7 +6,7 @@
     left: 0;
     top: 0;
     z-index: 2000;
-    background: rgba(0,0,0,.7);
+    background: rgba(0, 0, 0, 0.7);
     &.active {
         display: block;
     }
@@ -61,14 +61,14 @@ input[type="file"] {
         background-color: #26313B;
     }
     .active {
-        background: #007bff;
+        background:#7a1fde;
     }
 }
 
 #opinie-klientow-kotwica {
     .carousel-control-next,
     .carousel-control-prev {
-        background-color: #007bff;
+        background-color:#7a1fde;
         width: 30px;
     }
 }
