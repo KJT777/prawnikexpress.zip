@@ -30,7 +30,9 @@
   padding: 0 0; }
 
 .btn-dark {
-  font-family: "Signika Negative", sans-serif; }
+  font-family: "Signika Negative", sans-serif;
+  color:#f61000;
+ }
 
 /* Container */
 .col, [class^=col-] {
@@ -49,7 +51,7 @@
   font-family: "Signika Negative", sans-serif; }
 
 .products .btn-light {
-  color:#7a1fde;
+  color:#f61000;
   font-family: "Signika Negative", sans-serif; }
 
 /*Between*/
@@ -155,20 +157,20 @@
 
 /* Footer */
 .footer {
-  background-color:#7a1fde;
+  background-color:#f7f4fa;
   font-family: "Signika Negative", sans-serif; }
 
 .d-flex {
-  justify-content: space-around; }
+  justify-content: space-around;}
 
 .page-footer ul {
-  list-style-type: none; }
-
-.footer .page-footer .col-md-4 {
-  background-color: #7a1fde; }
+  list-style-type: none;}
 
 .footer .page-footer .col-md-6 {
-  background-color: #7a1fde; }
+  background-color:#f7f4fa;}
+
+.footer .page-footer .col-md-4 {
+  background-color:#f7f4fa;}
 
 /* Media */
 @media (max-width: 767px) {

@@ -45,11 +45,11 @@ input[type="file"] {
 .carousel-indicators li {
   background-color: #26313B; }
 .carousel-indicators .active {
-  background:#7a1fde;}
+  background:#f61000;}
 
 #opinie-klientow-kotwica .carousel-control-next,
 #opinie-klientow-kotwica .carousel-control-prev {
-  background-color:#CCCCCC;
+  background-color:#e30e00;
   width: 30px; }
 
 @media (max-width: 900px) {
