@@ -27,13 +27,16 @@
   transform: translate(-50%, -50%);
   right: auto;
   bottom: auto;
-  padding: 0 0; }
+  padding: 0 0;
+  color:white;
+  text-shadow: 2px 4px 10px black;
+ }
 
 .btn-dark {
   font-family: "Signika Negative", sans-serif;
   color:#f61000;
  }
-
+ 
 /* Container */
 .col, [class^=col-] {
   background-color: #fff;
@@ -42,16 +45,17 @@
 /* Products */
 .card-img-top img {
   width: 100%;
-  object-fit: cover; }
+  object-fit: cover;
+ }
 
 .products {
-  font-family: "Signika Negative", sans-serif; }
+  font-family: "Signika Negative", sans-serif;}
 
 .products .card-body {
-  font-family: "Signika Negative", sans-serif; }
+  font-family: "Signika Negative", sans-serif;}
 
 .products .btn-light {
-  color:#f61000;
+  color:#4607da;
   font-family: "Signika Negative", sans-serif; }
 
 /*Between*/

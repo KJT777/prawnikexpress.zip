@@ -56,14 +56,12 @@ class LawsuitForm {
           genericForm.updateWithContent(
             'Wszystko poszło sprawnie!',
             `<p>Szanowni Państwo po uregulowaniu wynagrodzenia, przystępujmy niezwłocznie do realizacji usługi w wybranym terminie i formie.<br> 
-            Na wpłatę czekamy 7 dni roboczych. Jednak  jeśli zależy Państwu na czasie proponujemy jak najszybciej uregulować płatność (w TYTULE wpisując imię i nazwisko oraz wybraną pozycję). Następnie wysłać potwierdzenie na adres mailowy.<br><br> 
+            Na wpłatę czekamy 7 dni roboczych. Jednak  jeśli zależy Państwu na czasie proponujemy jak najszybciej uregulować płatność (w TYTULE wpisując imię i nazwisko oraz opłacone pozycje spraw). Następnie wysłać potwierdzenie na adres mailowy.<br><br> 
             <b>Dane do wpłaty:</b><br>
             Suma do wpłaty: ${window.cost} zł<br><br>
-            Kate& KJT Business<br>
-            Katarzyna Trzebiatowska<br> 
-            71-298 Szczecin <br>
-            MBank , numer konta: 43 1140 2004 0000 3602 7686 3970<br><br>
-            
+            Wszystkie potrzebne dane do wpłaty otrzymacie Państwo<br>
+            wraz z mailem zwrotnym wysłanym do Państwa przez naszych pracowników na podany adres mailowy.<br>
+            Dziękujemy za zaufanie!<br><br>
             *za opłaconą usługę  uznajemy kwotę która zostanie zaksięgowana na naszym koncie.</p>`,
             'Zamknij popup',
             () => {
