@@ -2,7 +2,7 @@
 
 error_reporting(0);
 
-$mailToSend = "trzebiatowska@vp.pl";
+$mailToSend = "kontakt@prawnikexpress.pl";
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $name = $_POST["name"];
