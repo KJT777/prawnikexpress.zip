@@ -55,14 +55,18 @@ class LawsuitForm {
 
           genericForm.updateWithContent(
             'Wszystko poszło sprawnie!',
-            `<p>Szanowni Państwo po uregulowaniu wynagrodzenia, przystępujmy niezwłocznie do realizacji usługi w wybranym terminie i formie.<br> 
-            Na wpłatę czekamy 7 dni roboczych. Jednak  jeśli zależy Państwu na czasie proponujemy jak najszybciej uregulować płatność (w TYTULE wpisując imię i nazwisko oraz opłacone pozycje spraw). Następnie wysłać potwierdzenie na adres mailowy.<br><br> 
+            `<p><br><strong>Sposób płatności:</strong></b>
+            <br><strong>-Przelew bankowy</strong>
+            <br>Prosimy o wpłatę bezpośrednio na nasze konto bankowe. Prosimy użyć Imienia i Nazwiska jako tytułu płatności. Twoje zamówienie zostanie zrealizowane po zaksięgowaniu wpłaty na naszym koncie.<br>
+            <br>------------------------------------------------------------------------------------------------------------------------------<br>
+            <br>Szanowni Państwo po uregulowaniu wynagrodzenia, przystępujmy niezwłocznie do realizacji usługi w wybranym terminie i formie. Na wpłatę czekamy 7 dni roboczych. Jednak  jeśli zależy Państwu na czasie proponujemy jak najszybciej uregulować płatność (w TYTULE wpisując Imię i Nazwisko oraz opłacone pozycje spraw z koszyka).Następnie prosimy wysłać potwierdzenie na adres mailowy <b>biuro@prawnikexpress.pl</b>.Po otrzymaniu od prawnikexpress.pl potwierdzenia otrzymania maila wraz z potwierdzeniem zapłaty możecie Państwo uznać zlecenie za realizowane.<br><br> 
             <b>Dane do wpłaty:</b><br>
             Suma do wpłaty: ${window.cost} zł<br><br>
-            Wszystkie potrzebne dane do wpłaty otrzymacie Państwo<br>
-            wraz z mailem zwrotnym wysłanym do Państwa przez naszych pracowników na podany adres mailowy.<br>
+            Wszystkie potrzebne dane do wpłaty otrzymacie Państwo po potwierdzeniu wpisanego wcześniej adresu mailowego.Po weryfikacji danych informacje potrzebne do przelewu niezwłocznie zostaną wysłane do Państwa przez naszych pracowników na podany adres mailowy.<br>
             Dziękujemy za zaufanie!<br><br>
-            *za opłaconą usługę  uznajemy kwotę która zostanie zaksięgowana na naszym koncie.</p>`,
+            *za opłaconą usługę  uznajemy kwotę która zostanie zaksięgowana na naszym koncie.<br>
+            <br>Twoje dane osobowe będą użyte do przetworzenia twojego zamówienia, obsługi twojej wizyty na naszej stronie oraz dla innych celów o których mówi nasza polityka prywatności.<br>
+            <br><strong>ZAMAWIAM Z OBOWIĄZKIEM ZAPŁATY</strong><br></p>`,
             'Zamknij popup',
             () => {
                 genericForm.closeForm();
