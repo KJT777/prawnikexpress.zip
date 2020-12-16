@@ -66,7 +66,7 @@ class LawsuitForm {
             Dziękujemy za zaufanie!<br><br>
             *za opłaconą usługę  uznajemy kwotę która zostanie zaksięgowana na naszym koncie.<br>
             <br>Twoje dane osobowe będą użyte do przetworzenia twojego zamówienia, obsługi twojej wizyty na naszej stronie oraz dla innych celów o których mówi nasza polityka prywatności.<br>
-            <br><strong>ZAMAWIAM Z OBOWIĄZKIEM ZAPŁATY</strong><br></p>`,
+            <br><strong>ZAMAWIASZ Z OBOWIĄZKIEM ZAPŁATY</strong><br></p>`,
             'Zamknij popup',
             () => {
                 genericForm.closeForm();

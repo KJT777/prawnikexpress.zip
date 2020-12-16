@@ -55,7 +55,11 @@ class UserForm {
     const checkboxWrapper = document.createElement('div');
     checkboxWrapper.innerHTML = `
     <input type="checkbox" id="accept-checkbox" name="accept" ${this.accept ? 'checked' : ''}>
-    <label for="accept">Akceptuję Regulamin świadczenia usług i zapoznałem się z informacjami o danych osobowych</label>
+    <label for="accept">Akceptuję Regulamin świadczenia usług i zapoznałem się z informacjami o danych osobowych</label><br>
+    <input type="checkbox" id="accept-checkbox" name="accept" ${this.accept ? 'checked' : ''}>
+    <label for="accept">Zamawiam z obowiązkiem zapłaty</label><br>
+    <input type="checkbox" id="accept-checkbox" name="accept" ${this.accept ? 'checked' : ''}>
+    <label for="accept">Państwa dane osobowe będą użyte do przetworzenia zamówienia.</label>
     ${this.accept == false ? `
     <div class="invalid-feedback d-block">
       Akceptacja jest wymagana
