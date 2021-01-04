@@ -214,5 +214,20 @@
   display: none; }
   #generic-form.active {
     display: block; }
+  #generic-form .modal-content {
+    max-height: 90vh;
+  }
+
+  .pay-description {
+    padding-top: 55px;
+  }
+
+  .pay-instruction .row {
+    border: 1px solid #ccc;
+  }
+
+.pay-instruction .card {
+  border: 0;
+}
 
 /*# sourceMappingURL=style.css.map */
